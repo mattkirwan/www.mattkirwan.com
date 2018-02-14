@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   web:
-    image: lksoia89/mattkirwancom
+    image: lksoia89/mattkirwancom:0.3
     volumes:
       - ./conf/www.mattkirwan.dev.conf:/etc/nginx/conf.d/www.mattkirwan.dev.conf:ro
       - ./conf/nginx.conf:/etc/nginx/nginx.conf:ro
