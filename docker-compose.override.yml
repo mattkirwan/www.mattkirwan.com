@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  web:
+    build: .
+    volumes:
+      - ./conf/www.mattkirwan.dev.conf:/etc/nginx/conf.d/www.mattkirwan.dev.conf:ro
+      - ./public:/opt/www.mattkirwan.dev/public
+      - ./ssl:/etc/nginx/ssl
+    environment:
+      DEBUG: 'true'
