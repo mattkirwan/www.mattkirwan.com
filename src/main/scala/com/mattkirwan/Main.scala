@@ -8,7 +8,7 @@ import org.eclipse.jetty.webapp.WebAppContext
 import org.scalatra.servlet.ScalatraListener
 
 object Main extends App {
-  val server = new Server(8080)
+  val server = new Server(8181)
   val context = new WebAppContext()
   context.setContextPath("/")
   context.setResourceBase("src/main/webapp")

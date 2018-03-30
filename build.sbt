@@ -18,7 +18,7 @@ lazy val dockerSettings = Seq(
       add(artifact, artifactTargetPath)
       entryPoint("java", "-jar", artifactTargetPath)
     }
-  }
+  },
   buildOptions in docker := BuildOptions(cache = false)
 )
 
